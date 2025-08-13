@@ -42,12 +42,17 @@ body  {
   display: flex;
   flex-direction: row;
   min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .content-container{
   display:flex;
   max-width: 50rem;
-  aling-content: center;
+  justify-content: center;
+  align-items: center;
 }
+
 /* Sidebar */
 .sidebar {
   width: 80px;
@@ -152,14 +157,18 @@ body  {
 
 .profile-img {
   max-width: 400px;
+
+
   flex: 1 1 300px;
   margin-top: 30px;
 }
 
 .profile-img img {
   width: 100%;
+  height: 100%;
   border-radius: 20px;
-  border: #fff solid 3px;
+  object-fit: contain;
+  overflow:hidden;
 }
 
 /* RESPONSIVO */
